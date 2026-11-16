@@ -23,7 +23,7 @@ Keep `index.html`, `project.md`, `.nojekyll`, and `assets/a-hackers-mind-cover.j
 
 See [GitHub’s publishing-source documentation](https://docs.github.com/en/pages/getting-started-with-github-pages/configuring-a-publishing-source-for-your-github-pages-site) for the branch publishing settings.
 
-This workspace initially had no Git repository or GitHub remote. Publishing requires choosing a destination repository.
+Repository: https://github.com/duke-aipi-Han/XAI-HackersReflect
 
 ## Verify the models
 
@@ -33,7 +33,7 @@ With Node.js 18 or later:
 node --test tests/models.test.mjs
 ```
 
-The tests exercise the actual model code extracted from the HTML: reward calculations, the fixed vote distribution, both district plans, disconnected and unequal districts, lottery coverage, and prize splitting. Browser checks should also cover tabs, basket buttons, district reassignment, sliders, resets, keyboard access, and narrow screens.
+The tests exercise the actual model code extracted from the HTML: reward calculations, the fixed vote distribution, both district plans, disconnected and unequal districts, lottery coverage, and prize splitting. The three games appear one after another as you scroll. Browser checks should cover basket buttons, district reassignment, sliders, resets, keyboard access, and narrow screens.
 
 Verified in Chrome on desktop and at a 375px responsive width. Manual checks covered purchases and budget limits, reward-rule changes, resets, the minority-win preset, invalid district populations, lottery draws and prize splitting, local image loading, and opening the HTML directly from disk. Nine model tests pass.
 
